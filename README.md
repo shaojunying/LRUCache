@@ -18,3 +18,18 @@
 ## 其他
 1. 对持久化实现不做要求，尽量使用简单的方法，如保存成ison格式的文件等。
 2. 缓存參考：com.aooqle.common.cache.
+
+
+## 打包jar
+1. 使用如下命令生成class文件
+```bash
+javac -d target/ src/**/*.java
+```
+2. 使用如下命令生成jar包
+```bash
+jar -cvf LRuCache.jar -C target/ .
+```
+
+## 使用jar包
+
+jar包的使用请参考 [demo](demo)
