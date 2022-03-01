@@ -1,11 +1,11 @@
 package com.shao;
 
-public interface Cache<T> {
+public interface Cache<K, V> {
 
-    void put(String key, Object value);
+    void put(K key, V value);
 
-    T get(String key);
+    V get(K key);
 
-    void remove(String key);
+    void remove(K key);
 
 }
